@@ -1,0 +1,40 @@
+<div class="container my-5">
+  <h3>Add New Vehicle</h3>
+  <div class="row">
+      <div class="col-6">
+          <form #form="ngForm" (ngSubmit)="addVehicle()">
+              <div class="mb-3">
+                <label for="statePassing" class="form-label">State Passing</label>
+                <input type="text" class="form-control" id="statePassing"
+                 name="statePassing"[(ngModel)]="addVehicleRequest.statePassing">
+              </div>
+              <div class="mb-3">
+                  <label for="regionalCode" class="form-label">Regional Code</label>
+                  <input type="text" class="form-control" id="regionalCode"
+                  name="regionalCode"[(ngModel)]="addVehicleRequest.regionalCode">
+              </div>
+              <div class="mb-3">
+                  <label for="alphabets" class="form-label">Alphabets</label>
+                  <input type="alphabets" class="form-control" id="alphabets"
+                  name="alphabets"[(ngModel)]="addVehicleRequest.alphabets">
+              </div>
+              <div class="mb-3">
+                  <label for="vehicleNumber" class="form-label">Vehicle Number</label>
+                  <input type="text" class="form-control" id="vehicleNumber"
+                  name="vehicleNumber"[(ngModel)]="addVehicleRequest.vehicleNumber" >
+              </div>
+              <div class="mb-3">
+                <label for="userState" class="form-label">User State</label>
+                <input type="text" class="form-control" id="userState"
+                name="userState"[(ngModel)]="addVehicleRequest.userState" >
+            </div>
+            <div class="mb-3">
+              <label for="owner" class="form-label">Owner</label>
+              <input type="text" class="form-control" id="owner"
+              name="owner"[(ngModel)]="addVehicleRequest.owner" >
+          </div>
+              <button type="submit" class="btn btn-primary" onclick="alert('Submitted')">Submit</button>
+          </form>
+      </div>
+  </div>
+</div>
